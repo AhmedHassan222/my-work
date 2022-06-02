@@ -1,0 +1,455 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+:root{
+    --mainColor:#e65f78;
+    --mainFontP:20px;
+    --mainFontH:40px
+}
+.special-color{
+    color: var(--mainColor);
+}
+/* 
+N A V
+*/
+.font-size{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.hov-nav:hover{
+    color: var(--mainColor) !important;
+}
+
+.box{
+    width: 65px;
+    height: 70px;
+    background-color: black;
+    position: fixed;
+    right: 0;
+    top:9% ;
+
+}
+.wrapper{
+    position: fixed;
+    right: 30px;
+    top: 15%;
+}
+.gear-rotate{
+    width: 2em;
+    height: 2em;
+top: 50%; 
+left: 50%; 
+margin-top: -1em;
+margin-left: -1em;
+    background: #E9E581;
+    position: absolute;
+    border-radius: 1em;
+    -webkit-animation: 1s gear-rotate linear infinite;
+    animation: 1s gear-rotate linear infinite;
+}
+.gear-rotate::before, .gear-rotate-left::before {
+    width: 2.8em;
+    height: 2.8em;
+    background: 
+    -o-linear-gradient(0deg,transparent 39%,#E9E581 39%,#E9E581 61%, transparent 61%),
+    -o-linear-gradient(60deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%),
+    -o-linear-gradient(120deg,transparent 42%,#47EC19 42%,#E9E581 58%, transparent 58%);
+    background: 
+    -o-linear-gradient(bottom,transparent 39%,#E9E581 39%,#E9E581 61%, transparent 61%),
+    -o-linear-gradient(30deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%),
+    -o-linear-gradient(330deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%);
+    background: 
+    linear-gradient(0deg,transparent 39%,#E9E581 39%,#E9E581 61%, transparent 61%),
+    linear-gradient(60deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%),
+    linear-gradient(120deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%);
+    position: absolute;
+    content:"";
+    top: -.4em;
+    left: -.4em;
+    border-radius:1.4em;
+}
+.gear-rotate::after, .gear-rotate-left::after {
+    width: 1em;
+    height: 1em;
+    background: #2B2B2B;
+    position: absolute;
+    content:"";
+    top: .5em;
+    left: .5em;
+    border-radius: .5em;
+}
+@-webkit-keyframes gear-rotate {
+0% { 
+    -webkit-transform: rotate(0deg);
+}
+100% { 
+    -webkit-transform: rotate(-180deg); 
+}
+}
+
+@keyframes gear-rotate {
+0% { 
+    -webkit-transform: rotate(0deg); 
+            transform: rotate(0deg); 
+}
+100% { 
+    -webkit-transform: rotate(-180deg); 
+            transform: rotate(-180deg); 
+}
+}
+
+@-webkit-keyframes gear-rotate-left {
+0% {
+    -webkit-transform: rotate(30deg); 
+}
+100% {
+    -webkit-transform: rotate(210deg);
+}
+}
+
+@keyframes gear-rotate-left {
+0% { 
+    -webkit-transform: rotate(30deg); 
+}
+100% { 
+    -webkit-transform: rotate(210deg);
+}
+}
+body{
+    margin: 0;
+}
+.header{
+    background-image: url(../images/1.jpg);
+    background-position:  center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.heading3{
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #fff;
+}
+.content-image{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 8px solid rgb(3, 36, 36);
+}
+.btn-style
+{
+    background-color: var(--mainColor);
+    color: white;
+    border-radius: 0;
+    padding: 12px 45px;
+}
+.square{
+    width: 346.49px;
+    height: 380.49px;
+    position: relative;
+    border: 6px solid black;
+}
+.image{
+    position: absolute;
+    left: -5%;
+    top: -10%;
+    width: 100%;
+    opacity: 1;
+
+}
+.hov{
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.services{
+    background-color: #f9f9f9;
+}
+.portfolio p{
+    color: var(--mainColor);
+    
+}
+
+.items{
+    background-color: #2B2B2B;
+}
+.title a{
+    -webkit-text-decoration-style: none;
+            text-decoration-style: none;
+}
+.bord{
+    border: 1px solid rgb(209, 205, 205);
+}
+.footer{
+    height: 30vh;
+}
+.icons{
+    font-size: 1.3rem;
+
+}
+.fontsize-p{
+    font-size: 25px;
+}
+
+.contant p::after{
+    content: " ";
+    font-size: 25px;
+    -webkit-animation-name:typing;
+            animation-name:typing;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+.about .special::after{
+    content: " ";
+    font-size:25px;
+    color: var(--mainColor);
+    -webkit-animation-name:typing;
+            animation-name:typing;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes typing{
+    0%{content: " ";}
+    1%{content: " p";}
+    2%{content: "ph";}
+    3%{content: "pho";}                                       
+    4%{content: "phot";}
+    5%{content: "photo";}
+    6%{content: "Photog";}
+    7%{content: "Photogr";}
+    8%{content: "Photogra";}
+    9%{content: "Photograp";}
+    10%{content: "Photograph";}
+    11%{content: "Photographe";}
+    12%{content: "Photographer";}
+    13%{content: "Photographe";}
+    14%{content: "Photograph";}
+    15%{content: "Photograp";}
+    16%{content: "Photogra";}
+    17%{content: "Photogr";}
+    18%{content: "Photog";}
+    19%{content: "Photo";}
+    20%{content: "Phot";}
+    21%{content: "Pho";}
+    22%{content: "Ph";}                    
+    23%{content: "P";}
+    24%{content: " ";}
+    30%{content: "f";}
+    31%{content: "fr";}
+    32%{content: "fre";}
+    33%{content: "free";}
+    34%{content: "freel";}
+    35%{content: "freela";}
+    36%{content: "freelan";}
+    37%{content: "freelanc";}
+    38%{content: "freelance";}
+    39%{content: "freelancer";}
+    40%{content: "freelance";}
+    41%{content: "freelanc";}
+    42%{content: "freelan";}
+    43%{content: "freela";}
+    44%{content: "freel";}
+    45%{content: "free";}                       
+    46%{content: "fre";}
+    47%{content: "fr";}
+    48%{content: "f";}
+    49%{content: "";}
+    54%{content: "w";}
+    55%{content: "we";}
+    56%{content: "web";}
+    57%{content: "web ";}
+    58%{content: "web d";}
+    59%{content: "web de";}
+    60%{content: "web dev";}
+    61%{content: "web deve";}
+    62%{content: "web devel";}
+    63%{content: "web develo";}
+    64%{content: "web develop";}
+    65%{content: "web develope";}
+    66%{content: "web developer";}
+    67%{content: "web develope";}
+    68%{content: "web develop";}
+    69%{content: "web develo";}
+    70%{content: "web devel";}
+    71%{content: "web deve";}
+    72%{content: "web dev";}
+    73%{content: "web de";}
+    74%{content: "web d";}
+    75%{content: "web ";}
+    76%{content: "web";}
+    77%{content: "we";}
+    78%{content: "w";}
+    79%{content: " ";}
+}
+@keyframes typing{
+    0%{content: " ";}
+    1%{content: " p";}
+    2%{content: "ph";}
+    3%{content: "pho";}                                       
+    4%{content: "phot";}
+    5%{content: "photo";}
+    6%{content: "Photog";}
+    7%{content: "Photogr";}
+    8%{content: "Photogra";}
+    9%{content: "Photograp";}
+    10%{content: "Photograph";}
+    11%{content: "Photographe";}
+    12%{content: "Photographer";}
+    13%{content: "Photographe";}
+    14%{content: "Photograph";}
+    15%{content: "Photograp";}
+    16%{content: "Photogra";}
+    17%{content: "Photogr";}
+    18%{content: "Photog";}
+    19%{content: "Photo";}
+    20%{content: "Phot";}
+    21%{content: "Pho";}
+    22%{content: "Ph";}                    
+    23%{content: "P";}
+    24%{content: " ";}
+    30%{content: "f";}
+    31%{content: "fr";}
+    32%{content: "fre";}
+    33%{content: "free";}
+    34%{content: "freel";}
+    35%{content: "freela";}
+    36%{content: "freelan";}
+    37%{content: "freelanc";}
+    38%{content: "freelance";}
+    39%{content: "freelancer";}
+    40%{content: "freelance";}
+    41%{content: "freelanc";}
+    42%{content: "freelan";}
+    43%{content: "freela";}
+    44%{content: "freel";}
+    45%{content: "free";}                       
+    46%{content: "fre";}
+    47%{content: "fr";}
+    48%{content: "f";}
+    49%{content: "";}
+    54%{content: "w";}
+    55%{content: "we";}
+    56%{content: "web";}
+    57%{content: "web ";}
+    58%{content: "web d";}
+    59%{content: "web de";}
+    60%{content: "web dev";}
+    61%{content: "web deve";}
+    62%{content: "web devel";}
+    63%{content: "web develo";}
+    64%{content: "web develop";}
+    65%{content: "web develope";}
+    66%{content: "web developer";}
+    67%{content: "web develope";}
+    68%{content: "web develop";}
+    69%{content: "web develo";}
+    70%{content: "web devel";}
+    71%{content: "web deve";}
+    72%{content: "web dev";}
+    73%{content: "web de";}
+    74%{content: "web d";}
+    75%{content: "web ";}
+    76%{content: "web";}
+    77%{content: "we";}
+    78%{content: "w";}
+    79%{content: " ";}
+}
+.fontsize-paragraph{
+    font-size: var(--mainFontP);
+}
+.fontsize-heading{
+    font-size: var(--mainFontH);
+
+}
+.special-keys{
+    color: var(--mainColor);
+    font-size:20px;
+    font-style: italic;
+}
+.special-ancher{
+    -webkit-text-decoration-style: none;
+            text-decoration-style: none;
+}
+.i{
+    color: var(--mainColor);
+}
+.ICONE{
+    font-size: 3rem;
+    color: var(--mainColor);
+
+}
+
+.shadow-services{
+    background-color: white;
+    -webkit-box-shadow: 0px 1px 5px rgb(211, 211, 211);
+            box-shadow: 0px 1px 5px rgb(211, 211, 211);
+}
+.shadow-services:hover{
+    -webkit-box-shadow: 0px 5px 10px rgb(211, 211, 211);
+            box-shadow: 0px 5px 10px rgb(211, 211, 211);
+}
+.nav-portfolio{
+    color: black !important;
+}
+.nav-portfolio:hover{
+    color: var(--mainColor) !important;
+}
+.width{
+    width: 296.66px !important;
+    height: 296.66px !important;
+}
+.width:hover img{
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+
+}
+.bg-1{
+    background-color: rgb(219, 188, 217);
+}
+.bg-2{
+    background-color: rgb(10, 192, 192);
+}
+.bg-3{
+    background-color:rgb(120, 172, 214) ;
+}
+.bg-4{
+    background-color: red;
+}
+.bg-5{
+    background-color: rgb(55, 88, 160);
+}
+.bg-6{
+    background-color: rgb(43, 175, 164);
+}
+.news{
+    background-color: #f9f9f9;
+}
+.news-img{
+    overflow: hidden;
+}
+.news-img img:hover{
+    -webkit-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+            transform: rotate(5deg);
+}
+
